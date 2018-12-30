@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditItemActivity"
+    android:background="@drawable/gradient_background">
+
+    <ImageView
+        android:id="@+id/iv_editItem"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/et_editItem"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Edit text"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/iv_editItem"
+        android:inputType="textPersonName"
+        android:ems="10"/>
+
+    <ImageView
+        android:id="@+id/iv_editPriority"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_priority"
+        android:layout_below="@+id/iv_editItem"
+        android:layout_margin="10dp"/>
+    
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:text="SAVE"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:onClick="onSaveItem"/>
+    
+    <Spinner
+        android:id="@+id/spin_priorities"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/iv_editPriority"
+        android:layout_below="@+id/iv_editItem" />
+
+</RelativeLayout>

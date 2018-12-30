@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background">
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:text="ADD"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:onClick="onAddItem"/>
+
+    <EditText
+        android:id="@+id/et_addItem"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Add a new item here"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btn_add"
+        android:inputType="textPersonName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:ems="10"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="0dp"
+        android:ems="10">
+
+    </ListView>
+
+
+
+</RelativeLayout>
